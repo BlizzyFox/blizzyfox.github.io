@@ -1,0 +1,131 @@
+::selection { background: #ccc; opacity:1.0; color:#181818;}
+
+@font-face {font-family: hack; src: url("/data/font/hack-regular.woff") format("woff");}
+@font-face {font-family: hack; src: url("/data/font/hack-bold.woff") format("woff"); font-weight:bold;}
+@font-face {font-family: hack; src: url("/data/font/hack-italic.woff") format("woff"); font-style: oblique;}
+@font-face {font-family: sharppc3k; src: url("/data/font/sharppc3k.woff") format("woff");}
+@font-face {font-family: ibmcga2y; src: url("/data/font/ibmcga2y.woff") format("woff");}
+@font-face {font-family: ibmvga; src: url("/data/font/FSEX300.woff") format("woff");}
+@font-face {font-family: elegant; src: url("/data/font/elegant.woff") format("woff");}
+@font-face {font-family: 'urwdin'; src: url("/data/font/urwdin.woff") format("woff");}
+@font-face {font-family: 'sb'; src: url("/data/font/sb.woff") format("woff");}
+@font-face {font-family: 'oceanside'; src: url("/data/font/oceanside.woff") format("woff");}
+
+
+a:link {color:#0090e0;}
+a:visited {color:#0090e0;}
+a:hover {color:#181818;	border: 1px solid transparent; border-image: url("data/ants.gif") 1 repeat; background-color:e6e6e6;}
+a:active {color:#fff;}
+
+td, th {text-align:left; background-image:url("/data/bg_dither.png"); padding:4px;}
+table{width:100%; font-size:14px;}
+.filetable {border-collapse: collapse; margin:0px 0px 16px 0px; padding:0px; width:100%;}
+hr {border-style:dotted; border-width:1px 0 0 0; margin:8px 0 8px 0;}
+h2 {margin:0px;}
+h3 {font-size:10px; margin:0; font-weight:normal;}
+iframe {border:0px; flex:1;}
+p {margin:0px;}
+p + p {margin-top:16px;}
+
+.img2 {border: 2px inset #d0d0d0; margin-right:12px;}
+
+li {margin: 0; padding: 0; list-style-type: none;}
+ul {margin:6px 0px 3px 0px; padding-left: 30px;}
+ul li {margin:0px; font-size:12px;}
+
+.tiny {font-size:13px; display:inline;}
+
+.headimg {margin-left:30px; margin-top:-30px; margin-bottom:-32px; pointer-events:none; width:670px; height:200px;}
+
+body {background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
+
+.main {width:700px; padding:12px; display:inline-block; position:absolute; top:0; left:194px; min-height:calc(100% - 32px);}
+
+.sidenav {width:160px; height:100%; padding: 16px; top: 0; left: 0; color:#f4f4f4; background-color: #181818; overflow-x: hidden; font-size:14px; display:inline-block; position:absolute;}
+.sidenav a:link {text-decoration:none;}
+.sidenav a:hover {color:#fff; background-color:#282828;}
+.sidenav a:active {color:#0090e0;}
+.sidenav>hr {border-style:dotted; border-width:1px 0 0 0; margin:8px 0 8px 0;}
+
+.cool {margin:0px; max-height:0px; overflow:hidden;}
+input:checked ~ ul.cool {max-height:100%; margin:4px 0px 4px 0px;}
+input {display:none;}
+label {cursor:crosshair; user-select:none;}
+label:hover {color:#0090e0;}
+
+footer {text-align:center; font-size:12px;}
+
+.cmwrap {clear:both; display:inline-block; width:694; overflow:hidden; background-image:url("/data/bg_dither.png"); margin-bottom:3px; padding:2px;}
+.cmwrap2 { clear:both; display:inline-block; overflow:hidden; background-image:url("/data/bg_dither2.png"); margin-bottom:3px; font-size:20px; width:700px; padding:2px;}
+.cmwrap:hover {background-image:url("");}
+.cmlink {float:left; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; max-width:550px;}
+.cmsize {float:right; color:#181818 !important; font-style:normal;}
+.cmblogttl {color:#181818 !important; font-style:normal;}
+.cmwrap {text-decoration:none;}
+.filename {float:left; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; max-width:600px; margin:0px; padding:0px;}
+
+.grid-container{display:flex; height:100%;}
+.contentframe {width:100%; height:100%;}
+
+p + .time {margin-bottom:16px; margin-top:16px;}
+.time {text-align:center; font-family: sharppc3k, monospace; margin:0px; font-size:16px; padding:8px 0px 4px 0px; background-color:#181818; color:#f4f4f4; overflow:hidden;}
+.time a {padding:6px 0px 0px 0px;}
+
+.timesmall {margin:0px !important; font-size:16px; text-align:left; padding:8px !important; font-family:ibmcga2y, monospace;}
+
+#entry {margin-bottom:16px; display:inline-block;}
+
+#entry img {max-width:700px;}
+
+pre {margin:0px; padding:0px; font-family:ibmcga2y, monospace; line-height:16px; font-size:16px;}
+
+.annoying {color: #fff; animation: blink 1s infinite;}
+@keyframes blink {0% {color: #fff;} 100% {color: #0090e0;}}
+
+.mono {font-family: hack-mono, monospace; margin:0px;}
+
+.sortbox {font-size:16px; text-align:center; padding:8px; margin:8px 0px 16px 0px;}
+
+.sortbox-page {text-align:center; padding:8px; margin:0px 0px 8px 0px; background-color:#f4f4f4; width:684px; font-size:14px; position:sticky; top:-1px; z-index:1000; border-bottom:1px solid #ccc;}
+
+.sortbox-page a {font-size:18px; padding:0px 6px 0px 6px; margin:0px;}
+
+.titlebar {text-align:center; padding:8px; margin:8px 0px 16px 0px; color:#fff; background-color:#0090e0; font-size:16px;}
+
+.titlebar a {color:#0090e0; font-weight:bold; padding:1px; background-color:#efefef;}
+
+.titlebar a:hover {color:#181818; background-color:e6e6e6; font-weight:bold;}
+
+summary {display:none;}
+details {overflow: hidden;}
+div.content {margin:0px 0px 16px 0px; overflow: hidden; background-image:url("/data/bg_dither.png"); max-height: 100%; padding:8px;}
+
+.emotebox{display:inline-block; overflow:visible; width:20px; height:14px;}
+
+.emote{image-rendering:pixelated; width:20px; height:20px; position:absolute;}
+
+.emote:hover{width:40px; height:40px; margin:-15px 0 0 -15px; padding:4px; position:absolute; z-index:10;}
+
+/* tucking complex or newer features into a media query to prevent them from loading on old browsers */
+@media{
+    .sidenav {width:160px; height:100%; padding: 16px; top: 0; left: 0; color:#f4f4f4; background-color: #181818; overflow-x: hidden; font-size:14px; display:inline-block; position:fixed;}
+    summary {display:block; text-align:center; padding:8px; margin:8px 0px 0px 0px; background-color:#181818; color:#f4f4f4; list-style-type: none; cursor: crosshair; font-size:16px;}
+    summary:hover {background-color:#0090e0;}
+    summary:before {content:"🞮 click to collapse";}
+    details summary::-webkit-details-marker {display:none;}
+    details[open] summary:hover {background-color:#0090e0;}
+    details[open] + div.content {max-height: 0px; padding:0px;}
+    details[open] summary::before {content:"🛈 click for info";}
+    details[open] summary {background-color:#adadad;} 
+    }
+
+@media (pointer: fine){
+    body {background-image: url("/data/bg_msx.png"); background-size:contain; background-repeat: no-repeat; background-position:100% top; background-attachment: fixed; background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25;}
+    }
+
+@media (max-height:800px){body {background-image: url("/data/bg_msx.png"); background-size:600px 800px; background-repeat: no-repeat; background-position:100% top; background-attachment: fixed; background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25;}}
+
+/* removing bg on mobile */
+@media only screen and (pointer: coarse) {
+    body {background-image: url("");}
+    }
