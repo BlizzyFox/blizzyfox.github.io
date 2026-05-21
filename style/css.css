@@ -1,15 +1,15 @@
 ::selection { background: #ccc; opacity:1.0; color:#181818;}
 
-@font-face {font-family: hack; src: url("/data/font/hack-regular.woff") format("woff");}
-@font-face {font-family: hack; src: url("/data/font/hack-bold.woff") format("woff"); font-weight:bold;}
-@font-face {font-family: hack; src: url("/data/font/hack-italic.woff") format("woff"); font-style: oblique;}
-@font-face {font-family: sharppc3k; src: url("/data/font/sharppc3k.woff") format("woff");}
-@font-face {font-family: ibmcga2y; src: url("/data/font/ibmcga2y.woff") format("woff");}
-@font-face {font-family: ibmvga; src: url("/data/font/FSEX300.woff") format("woff");}
-@font-face {font-family: elegant; src: url("/data/font/elegant.woff") format("woff");}
-@font-face {font-family: 'urwdin'; src: url("/data/font/urwdin.woff") format("woff");}
-@font-face {font-family: 'sb'; src: url("/data/font/sb.woff") format("woff");}
-@font-face {font-family: 'oceanside'; src: url("/data/font/oceanside.woff") format("woff");}
+@font-face {font-family: hack; src: url("../data/font/hack-regular.woff") format("woff");}
+@font-face {font-family: hack; src: url("../data/font/hack-bold.woff") format("woff"); font-weight:bold;}
+@font-face {font-family: hack; src: url("../data/font/hack-italic.woff") format("woff"); font-style: oblique;}
+@font-face {font-family: sharppc3k; src: url("../data/font/sharppc3k.woff") format("woff");}
+@font-face {font-family: ibmcga2y; src: url("../data/font/ibmcga2y.woff") format("woff");}
+@font-face {font-family: ibmvga; src: url("../data/font/FSEX300.woff") format("woff");}
+@font-face {font-family: elegant; src: url("../data/font/elegant.woff") format("woff");}
+@font-face {font-family: 'urwdin'; src: url("../data/font/urwdin.woff") format("woff");}
+@font-face {font-family: 'sb'; src: url("../data/font/sb.woff") format("woff");}
+@font-face {font-family: 'oceanside'; src: url("../data/font/oceanside.woff") format("woff");}
 
 
 a:link {color:#0090e0;}
