@@ -14,7 +14,7 @@
 
 a:link {color:#0090e0;}
 a:visited {color:#0090e0;}
-a:hover {color:#181818;	border: 1px solid transparent; border-image: url("data/ants.gif") 1 repeat; background-color:e6e6e6;}
+a:hover {color:#181818; border: 1px solid transparent; border-image: url("/data/ants.gif") 1 repeat; background-color:#e6e6e6;}
 a:active {color:#fff;}
 
 td, th {text-align:left; background-image:url("/data/bg_dither.png"); padding:4px;}
@@ -37,7 +37,19 @@ ul li {margin:0px; font-size:12px;}
 
 .headimg {margin-left:30px; margin-top:-30px; margin-bottom:-32px; pointer-events:none; width:670px; height:200px;}
 
-body {background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
+body {
+    background-color: #f4f4f4;
+    color: #181818;
+    font-family: hack, monospace, sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+
+    background-image: url("/pridetrans.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-size: auto 100vh;
+}
 
 .main {width:700px; padding:12px; display:inline-block; position:absolute; top:0; left:194px; min-height:calc(100% - 32px);}
 
@@ -55,7 +67,7 @@ label:hover {color:#0090e0;}
 
 footer {text-align:center; font-size:12px;}
 
-.cmwrap {clear:both; display:inline-block; width:694; overflow:hidden; background-image:url("/data/bg_dither.png"); margin-bottom:3px; padding:2px;}
+.cmwrap {clear:both; display:inline-block; width:694px; overflow:hidden; background-image:url("/data/bg_dither.png"); margin-bottom:3px; padding:2px;}
 .cmwrap2 { clear:both; display:inline-block; overflow:hidden; background-image:url("/data/bg_dither2.png"); margin-bottom:3px; font-size:20px; width:700px; padding:2px;}
 .cmwrap:hover {background-image:url("");}
 .cmlink {float:left; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; max-width:550px;}
@@ -94,7 +106,7 @@ pre {margin:0px; padding:0px; font-family:ibmcga2y, monospace; line-height:16px;
 
 .titlebar a {color:#0090e0; font-weight:bold; padding:1px; background-color:#efefef;}
 
-.titlebar a:hover {color:#181818; background-color:e6e6e6; font-weight:bold;}
+.titlebar a:hover {color:#181818; background-color:#e6e6e6; font-weight:bold;}
 
 summary {display:none;}
 details {overflow: hidden;}
@@ -107,7 +119,7 @@ div.content {margin:0px 0px 16px 0px; overflow: hidden; background-image:url("/d
 .emote:hover{width:40px; height:40px; margin:-15px 0 0 -15px; padding:4px; position:absolute; z-index:10;}
 
 /* tucking complex or newer features into a media query to prevent them from loading on old browsers */
-@media{
+@media all {
     .sidenav {width:160px; height:100%; padding: 16px; top: 0; left: 0; color:#f4f4f4; background-color: #181818; overflow-x: hidden; font-size:14px; display:inline-block; position:fixed;}
     summary {display:block; text-align:center; padding:8px; margin:8px 0px 0px 0px; background-color:#181818; color:#f4f4f4; list-style-type: none; cursor: crosshair; font-size:16px;}
     summary:hover {background-color:#0090e0;}
@@ -116,16 +128,53 @@ div.content {margin:0px 0px 16px 0px; overflow: hidden; background-image:url("/d
     details[open] summary:hover {background-color:#0090e0;}
     details[open] + div.content {max-height: 0px; padding:0px;}
     details[open] summary::before {content:"🛈 click for info";}
-    details[open] summary {background-color:#adadad;} 
+    details[open] summary {background-color:#adadad;}
+}
+
+/*
+   Background correction:
+   These media queries previously replaced /pridetrans.png with /data/bg_msx.png
+   or removed the background on mobile. They now keep the same bottom-right,
+   full-height background on all pages/devices.
+*/
+
+@media (pointer: fine) {
+    body {
+        background-image: url("/pridetrans.png");
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-attachment: fixed;
+        background-color:#f4f4f4;
+        color:#181818;
+        font-family: hack, monospace, sans-serif;
+        font-size:14px;
+        line-height:1.25;
     }
+}
 
-@media (pointer: fine){
-    body {background-image: url("/data/bg_msx.png"); background-size:contain; background-repeat: no-repeat; background-position:100% top; background-attachment: fixed; background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25;}
+@media (max-height:800px) {
+    body {
+        background-image: url("/pridetrans.png");
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-attachment: fixed;
+        background-color:#f4f4f4;
+        color:#181818;
+        font-family: hack, monospace, sans-serif;
+        font-size:14px;
+        line-height:1.25;
     }
+}
 
-@media (max-height:800px){body {background-image: url("/data/bg_msx.png"); background-size:600px 800px; background-repeat: no-repeat; background-position:100% top; background-attachment: fixed; background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25;}}
-
-/* removing bg on mobile */
+/* Keep the same background on mobile/coarse-pointer devices */
 @media only screen and (pointer: coarse) {
-    body {background-image: url("");}
+    body {
+        background-image: url("/pridetrans.png");
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-attachment: fixed;
     }
+}
