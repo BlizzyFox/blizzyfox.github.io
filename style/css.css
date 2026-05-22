@@ -14,7 +14,7 @@
 
 a:link {color:#0090e0;}
 a:visited {color:#0090e0;}
-a:hover {color:#181818;	border: 1px solid transparent; border-image: url("data/ants.gif") 1 repeat; background-color:e6e6e6;}
+a:hover {color:#181818;	border: 1px solid transparent; border-image: url("/data/ants.gif") 1 repeat; background-color:#e6e6e6;}
 a:active {color:#fff;}
 
 td, th {text-align:left; background-image:url("/data/bg_dither.png"); padding:4px;}
@@ -39,7 +39,15 @@ ul li {margin:0px; font-size:12px;}
 
 body {background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
 
-.main {width:700px; padding:12px; display:inline-block; position:absolute; top:0; left:194px; min-height:calc(100% - 32px);}
+.main {
+    width:700px;
+    padding:12px;
+    display:inline-block;
+    position:absolute;
+    top:0;
+    left:194px;
+    min-height:calc(100% - 32px);
+}
 
 .sidenav {width:160px; height:100%; padding: 16px; top: 0; left: 0; color:#f4f4f4; background-color: #181818; overflow-x: hidden; font-size:14px; display:inline-block; position:absolute;}
 .sidenav a:link {text-decoration:none;}
