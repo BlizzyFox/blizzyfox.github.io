@@ -17,46 +17,90 @@
     .htb {
         border-bottom:1px dotted #808080;
     }
+
+    .header {
+        background-color: #71bbd8;
+        color: #fff;
+        width: 100%;                  /* 100% of the wrapper’ */
+        height: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        text-align: center;
+    }
+    .middleColumn {
+		width: 100%;                  /* only 30% of the entire wrapper’s width */
+        float: left;
+        margin: 0;                   /* no margins so it’s flushed against the other */
+        padding: 0;                  /* column and the edges of the wrapper */
+	}
+    .footer {
+        background-color: #fff;
+        border-top: 1px dashed #888; /* border to separate disclaimer from page text */
+        color: #888;
+        font-size: 0.9rem;             /* smaller font compared to page text */
+        margin: 0 auto;              /* space between top and bottom of container */
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content {
+        background-color: #fff;
+        color: #444;
+        height: 80vh;
+        width: 100%;
+        padding: 1rem 5rem;                /* create a 1em gutter on all sides */
+        text-align: left;
+        overflow-y: scroll;          /* make only the content section scrollable */
+    }
+
 </style>
 </head>
 <body>
 <div class="main">
-<p>hi, i'm Blizzy <i>(she/her)</i>.</p>
-<p>i make 3d art. mostly assets for vrchat. i make everything from weapons to enviroments
-to creatures. i also animate. i'm working on finishing up my mechanical engineering 
-degree. i hope you enjoy this little space.</p>
-<br>
-<p>i'm kind of exhausted with the enshittification 
-of the internet.
-i was inspired to do so by some other creative people and i hope 
-more people go this route its fun.</p>
-<br>
-<p>i sometimes update this space with my longer musings and projects.</p>
-<br>
-<div style="text-align: center;">
-    <img src="pridetrans.png" alt="I'm Trans lol" style="vertical-align: middle;" />
-    <a href="https://discord.com/invite/GT48udreU3"><img src="pagerdiscord.gif" alt="Join My Discord!" style="vertical-align: middle;" /></a>
-    <img src="paws.gif" alt="Made with my own Paws!" style="vertical-align: middle;" />
-    <a href="https://bsky.app/profile/blizzy.art"><img src="image.png" alt="Bluesky" style="vertical-align: middle;" /></a>
-</div>
-<table>
-<tbody><tr><th colspan="2" class="htb"><h2>stuff</h2> <i>(and things)</i></th></tr>
-<tr><th width="150px">/ home</th><td>haiiii</td></tr>
-<tr><th width="150px" >/ aboutMe</th><td>biography of sorts</td></tr>
-<tr><th width="150px">/ characters</th><td>fursona and shells</td></tr>
-<tr><th width="150px">/ gender</th><td>oh yeah she went there</td></tr>
-</tbody>
-</table>
-</div>
-<div class="sidenav">
-    art:<br>
-    <li>/ <a href="/fursona.htm">ref-sheets</a></li>
-    products:<br>
-    <li>/ <a href="https://blizzyfox.gumroad.com/">gumroad</a></li>
-    <li>/ <a href="https://jinxxy.com/BlizzyFox/products">jinxxy</a></li>
-    <li>/ <a href="/docs/termsofuse.htm">docs/termsofuse</a></li>
-    external:<br>
-    <li>/ <a href="https://blizzyfox.carrd.co">carrd</a></li>
-</div>
+    <div class="row">
+        <div class="middleColumn">
+            <div class="header">
+                <h1>🪴 [Blizzy's Garden] 🪴</h1>
+            </div>
+            <div class="content">
+                <p>hi, i'm <b>Blizzy</b> <i>(she/her)</i>.</p>
+                <p>i make 3d art. mostly assets for vrchat.</p>
+                <br>
+                <p>i'm kind of exhausted with the enshittification 
+                of the internet.
+                </p>
+                <br>
+                <p>are emoji okay or are people gunna think I used ai?</p>
+                <div style="text-align: center; padding:1rem">
+                    <img src="pridetrans.png" alt="I'm Trans lol" style="vertical-align: middle;" />
+                    <a href="https://discord.com/invite/GT48udreU3"><img src="pagerdiscord.gif" alt="Join My Discord!" style="vertical-align: middle;" /></a>
+                    <img src="paws.gif" alt="Made with my own Paws!" style="vertical-align: middle;" />
+                    <a href="https://bsky.app/profile/blizzy.art"><img src="image.png" alt="Bluesky" style="vertical-align: middle;" /></a>
+                </div>
+                <table>
+                    <tbody>
+                        <tr><th colspan="2" class="htb"><h2>stuff</h2> <i>(and things)</i></th></tr>
+                        <tr><th width="150px">/ home</th><td>haiiii</td></tr>
+                        <tr><th width="150px" >/ aboutMe</th><td>biography of sorts</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <p>🪴 Blizzy's Garden 🪴</p>
+            </div>
+        </div>
+
+
+        <div class="sidenav">
+            art:<br>
+            <li>/ <a href="/fursona.htm">ref-sheets</a></li>
+            products:<br>
+            <li>/ <a href="https://blizzyfox.gumroad.com/">gumroad</a></li>
+            <li>/ <a href="https://jinxxy.com/BlizzyFox/products">jinxxy</a></li>
+            <li>/ <a href="/docs/termsofuse.htm">docs/termsofuse</a></li>
+            external:<br>
+            <li>/ <a href="https://blizzyfox.carrd.co">carrd</a></li>
+        </div>
+    </div>
 </body>
 </html>
