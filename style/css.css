@@ -47,6 +47,7 @@ body {background-color:#b870fc; color:#181818; font-family: hack, monospace, san
     top:0;
     left:194px;
     min-height:calc(100% - 32px);
+    color:#b870fc;
 }
 
 .sidenav {
