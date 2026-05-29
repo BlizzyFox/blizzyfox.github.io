@@ -82,7 +82,7 @@ label:hover {color:#0090e0;}
 
 footer {text-align:center; font-size:12px;}
 
-.cmwrap {clear:both; display:inline-block; width:694; overflow:hidden; background-image:url("/data/bg_dither.png"); margin-bottom:3px; padding:2px;}
+.cmwrap {clear:both; display:inline-block; width:694px; overflow:hidden; background-image:url("/data/bg_dither.png"); margin-bottom:3px; padding:2px;}
 .cmwrap2 { clear:both; display:inline-block; overflow:hidden; background-image:url("/data/bg_dither2.png"); margin-bottom:3px; font-size:20px; width:700px; padding:2px;}
 .cmwrap:hover {background-image:url("");}
 .cmlink {float:left; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; max-width:550px;}
@@ -121,7 +121,7 @@ pre {margin:0px; padding:0px; font-family:ibmcga2y, monospace; line-height:16px;
 
 .titlebar a {color:#0090e0; font-weight:bold; padding:1px; background-color:#efefef;}
 
-.titlebar a:hover {color:#181818; background-color:e6e6e6; font-weight:bold;}
+.titlebar a:hover {color:#181818; background-color:#e6e6e6; font-weight:bold;}
 
 summary {display:none;}
 details {overflow: hidden;}
