@@ -40,14 +40,13 @@ ul li {margin:0px; font-size:12px;}
 body {background-color:#b870fc; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
 
 .main {
-    width:100%;
+    width:70%;
     padding:12px;
     display:inline-block;
     position:absolute;
     top:0;
     left:194px;
     min-height:calc(100% - 32px);
-    color:#b870fc;
 }
 
 .sidenav {
@@ -126,7 +125,7 @@ pre {margin:0px; padding:0px; font-family:ibmcga2y, monospace; line-height:16px;
 
 summary {display:none;}
 details {overflow: hidden;}
-div.content {margin:0px 0px 16px 0px; overflow: hidden; background-image:url("/data/bg_dither.png"); max-height: 100%; padding:8px;}
+div.content {margin:0px 0px 16px 0px; overflow: scroll; max-height: 100%; padding:8px;}
 
 .emotebox{display:inline-block; overflow:visible; width:20px; height:14px;}
 
