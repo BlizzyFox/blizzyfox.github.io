@@ -1,4 +1,4 @@
-::selection { background: #796cac; opacity:1.0; color:#181818;}
+::selection { background: #f4f4f4; opacity:1.0; color:#181818;}
 
 @font-face {font-family: hack; src: url("../data/fonts/hack-regular.woff") format("woff");}
 @font-face {font-family: hack; src: url("../data/fonts/hack-bold.woff") format("woff"); font-weight:bold;}
@@ -37,7 +37,7 @@ ul li {margin:0px; font-size:12px;}
 
 .headimg {margin-left:30px; margin-top:-30px; margin-bottom:-32px; pointer-events:none; width:670px; height:200px;}
 
-body {background-color:#b870fc; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
+body {background-color:#f4f4f4; color:#181818; font-family: hack, monospace, sans-serif; font-size:14px; line-height:1.25; background-image: url("/data/bg_sidefill.png"); background-repeat: repeat-y; background-position:top left;}
 
 .main {
     width:70%;
